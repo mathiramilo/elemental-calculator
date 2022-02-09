@@ -251,17 +251,20 @@ a {
     box-shadow: 0 0 3px #00000038;
 }
 
-.button-operator {
+.button-operator-water {
     background-color: #28C3BA;
 }
 
-.button-operator:hover {
+.button-operator-water:hover {
     background-color: #23b3ab;
 }
 
 .button-equal {
-    background-image: linear-gradient(to bottom right, #1dc3da 0%, #0f3961 100%);;
     grid-column: 4 / 5;
+}
+
+.button-equal-water {
+    background-image: linear-gradient(to bottom right, #1dc3da 0%, #0f3961 100%);
 }
 
 .button-equal:hover {
@@ -403,7 +406,7 @@ a {
 }
 
 .stm-container h1 {
-    color: #202020;
+    color: #202020c4;
 }
 
 .stm-container h2 {
@@ -432,4 +435,100 @@ a {
 
 .button-equal-air {
     background-image: linear-gradient(to bottom right, #94B5BF, #3D5D7B);
+}
+
+/* --- FIRE --- */
+.fire {
+    background-image: var(--fire-gradient); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-operator-fire {
+    background-color: #F3610F;
+}
+
+.button-operator-fire:hover {
+    background-color: #ff4800;
+}
+
+.button-equal-fire {
+    background-image: linear-gradient(to bottom right, #F6D525, #FA9805);
+}
+
+.fire .stats {
+    background-color: #00000063;
+}
+
+.fire .themes svg {
+    fill: #111111;
+}
+
+.fire .themes button {
+    background-color: #00000080;
+}
+
+.fire .themes button:hover {
+    background-color: #000000c0;
+}
+
+.fire .themes p {
+    color: #000000;
+}
+
+.fire .footer h3 {
+    color: #000;
+}
+
+.fire .calculator {
+    background-color: #00000054;
+}
+
+.fire .calculator .display {
+    background-color: #00000048;
+}
+
+.fire .stm-container {
+    background-color: #000000d5;
+}
+
+.fire .stm-container h1 {
+    color: #ffffffef;
+}
+
+.fire .stm-container h2 {
+    color: #fff;
+}
+
+.fire .element:hover {
+    background-color: #ffffff09;
+}
+
+/* --- EARTH --- */
+.earth {
+    background-image: var(--earth-gradient); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-operator-earth {
+    background-color: #1ACB4C;
+}
+
+.button-operator-earth:hover {
+    background-color: #16b142;
+}
+
+.button-equal-earth {
+    background-image: linear-gradient(to bottom right, #B1E51D, #10B43E);
 }
