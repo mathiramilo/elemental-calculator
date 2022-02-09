@@ -7,6 +7,10 @@ waterElement.addEventListener('click', function() {
     particles.remove();
     document.body.innerHTML = createWaterDiv();
 
+    clickCounter();
+    operationsCounter();
+    timer();
+
     // --- Button Standard Themes ---
     const buttonStandardThemes = document.getElementById('standard-themes-btn');
     const modalStandardThemes = document.getElementById('standard-themes-modal');
@@ -121,6 +125,7 @@ waterElement.addEventListener('click', function() {
         buttonEqual.style.backgroundImage = "linear-gradient(to bottom right, #B1E51D, #10B43E)";
     });
 });
+
 
 // --- AIR ELEMENT ---
 const airElement = document.getElementById('air-element');
@@ -128,6 +133,10 @@ airElement.addEventListener('click', function() {
     particles.remove();
     document.body.innerHTML = createAirDiv();
 
+    clickCounter();
+    operationsCounter();
+    timer();
+
     // --- Button Standard Themes ---
     const buttonStandardThemes = document.getElementById('standard-themes-btn');
     const modalStandardThemes = document.getElementById('standard-themes-modal');
@@ -242,6 +251,7 @@ airElement.addEventListener('click', function() {
         buttonEqual.style.backgroundImage = "linear-gradient(to bottom right, #B1E51D, #10B43E)";
     });
 });
+
 
 // --- FIRE ELEMENT ---
 const fireElement = document.getElementById('fire-element');
@@ -249,6 +259,10 @@ fireElement.addEventListener('click', function() {
     particles.remove();
     document.body.innerHTML = createFireDiv();
 
+    clickCounter();
+    operationsCounter();
+    timer();
+
     // --- Button Standard Themes ---
     const buttonStandardThemes = document.getElementById('standard-themes-btn');
     const modalStandardThemes = document.getElementById('standard-themes-modal');
@@ -363,6 +377,7 @@ fireElement.addEventListener('click', function() {
         buttonEqual.style.backgroundImage = "linear-gradient(to bottom right, #B1E51D, #10B43E)";
     });
 });
+
 
 // --- EARTH ELEMENT ---
 const earthElement = document.getElementById('earth-element');
@@ -370,6 +385,10 @@ earthElement.addEventListener('click', function() {
     particles.remove();
     document.body.innerHTML = createEarthDiv();
 
+    clickCounter();
+    operationsCounter();
+    timer();
+
     // --- Button Standard Themes ---
     const buttonStandardThemes = document.getElementById('standard-themes-btn');
     const modalStandardThemes = document.getElementById('standard-themes-modal');
@@ -484,6 +503,56 @@ earthElement.addEventListener('click', function() {
         buttonEqual.style.backgroundImage = "linear-gradient(to bottom right, #B1E51D, #10B43E)";
     });
 });
+
+
+// Timer
+function timer() {
+    seconds = 0;
+    minutes = 0;
+
+    let secs = document.getElementById('seconds');
+    let mins = document.getElementById('minutes');
+
+    window.setInterval(function() {
+        if (seconds == 60) {
+            seconds = 0;
+            minutes++;
+            mins.innerHTML = minutes;
+        }
+        
+        seconds++;
+        secs.innerHTML = seconds;
+    }, 1000);
+}
+
+// Click Counter
+function clickCounter() {
+    let clicks = document.getElementById('total-clicks');
+
+    const calculatorButtons = document.querySelectorAll('.button');
+    calculatorButtons.forEach(element => {
+        element.addEventListener('click', () => {
+            totalClicks = parseInt(clicks.innerHTML);
+            totalClicks++;
+            clicks.innerHTML = totalClicks;
+        })
+    })
+}
+
+// Operations Counter
+function operationsCounter() {
+    let operations = document.getElementById('total-operations');
+
+    const equalButton = document.querySelector('.button-equal');
+    equalButton.addEventListener('click', () => {
+        let displayOperation = document.querySelector('.operation');
+        if (displayOperation.innerHTML != "") {
+            totalOperations = parseInt(operations.innerHTML);
+            totalOperations++;
+            operations.innerHTML = totalOperations;
+        }
+    })
+}
 
 
 // Changes the Background Gradient (No using)
@@ -492,9 +561,9 @@ function changeBgGradient(gradient) {
 }
 
 // Alert when trying to reload
-// window.onbeforeunload = function() {
-//     return "";
-// }
+window.onbeforeunload = function() {
+    return "";
+}
 
 
 
