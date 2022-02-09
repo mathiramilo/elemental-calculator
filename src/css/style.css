@@ -6,9 +6,9 @@
     /* Gradientes */
     --night-gradient: linear-gradient(180deg, #1b0c46eb 0%, #0C2448 100%);
     --water-gradient: linear-gradient(180deg, #2ac4b9 0%, #0f3961 100%);
-    --air-gradient: linear-gradient(180deg, #bad8d6 0%, #355b6e 100%);
+    --air-gradient: linear-gradient(180deg, #a2d3d0 0%, #1c3947 100%);
     --fire-gradient: linear-gradient(180deg, #ecd44a 0%, #ca5b11 100%);
-    --earth-gradient: linear-gradient(180deg, #87e252 0%, #0c5e2b 100%);
+    --earth-gradient: linear-gradient(180deg, #96e966 0%, #0c5e2b 100%);
 }
 
 /* ---- RESET AND ADJUSTMENTS ---- */ 
