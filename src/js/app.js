@@ -555,14 +555,14 @@ function operationsCounter() {
 }
 
 
-// Changes the Background Gradient (No using)
-function changeBgGradient(gradient) {
-    document.getElementById('particles-js').style.backgroundImage = gradient;
-}
-
 // Alert when trying to reload
 window.onbeforeunload = function() {
     return "";
+}
+
+// Changes the Background Gradient (No using)
+function changeBgGradient(gradient) {
+    document.getElementById('particles-js').style.backgroundImage = gradient;
 }
 
 
