@@ -735,8 +735,10 @@ function calculator() {
     
     btnEqual.addEventListener('click', () => {
         let operation = displayOperation.value;
-        displayOperation.value = "";
-        displayResult.value = eval(operation);
+        if (operation != "") {
+            displayOperation.value = "";
+            displayResult.value = eval(operation);
+        }
     });
 
 
