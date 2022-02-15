@@ -532,3 +532,149 @@ a {
 .button-equal-earth {
     background-image: linear-gradient(to bottom right, #B1E51D, #10B43E);
 }
+
+/* ------ PREMIUM THEMES MODAL ------ */
+.premium-themes-modal {
+    opacity: 1;
+}
+
+#sunset-element {
+    justify-content: center;
+}
+
+#aurora-element h2 {
+    margin-bottom: px;
+}
+
+#aurora-element img {
+    width: 100px;
+}
+
+#fade-element img {
+    position: relative;
+    top: -10px;
+    width: 110px;
+}
+
+#fade-element h2 {
+    position: relative;
+    bottom: 7px;
+}
+
+.aurora-img {
+    width: 100px !important;
+}
+
+.element-unlock {
+    display: flex;
+    gap: 3px;
+}
+
+.element-unlock svg {
+    width: 9px;
+    fill: #333333;
+}
+
+.element-unlock p {
+    font-size: 0.6rem;
+    color: #5c5c5c;
+}
+
+
+/* --- BOREAL AURORA --- */
+.aurora {
+    background-image: linear-gradient(#1eecca, #e01fd7); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-operator-aurora {
+    background-color: #20dfc5;
+}
+
+.button-operator-aurora:hover {
+    background-color: #23c9b3;
+}
+
+.button-equal-aurora {
+    background-image: linear-gradient(to bottom right, #f06ae5, #d61db7);
+}
+
+/* --- SUNSET --- */
+.sunset {
+    background-image: linear-gradient(#1b4592, #f14115); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-operator-sunset {
+    background-color: #176c8d;
+}
+
+.button-operator-sunset:hover {
+    background-color: #135874;
+}
+
+.button-equal-sunset {
+    background-image: linear-gradient(to bottom right, #d62167, #e6281a);
+}
+
+/* --- FADE --- */
+.fade {
+    background-image: linear-gradient(#f8e806, #ff00dd); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-operator-fade {
+    background-color: #eb75c4;
+}
+
+.button-operator-fade:hover {
+    background-color: #e956b8;
+}
+
+.button-equal-fade {
+    background-image: linear-gradient(to bottom right, #ec9613, #e719a3);
+}
+
+/* --- LOVE --- */
+.love {
+    background-image: linear-gradient(#f30bad, #ce1c25ee); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-operator-love {
+    background-color: #ee3f56;
+}
+
+.button-operator-love:hover {
+    background-color: #d32940;
+}
+
+.button-equal-love {
+    background-image: linear-gradient(to bottom right, #f30bad, #ce1c25ee);
+}
