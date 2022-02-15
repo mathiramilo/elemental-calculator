@@ -29,10 +29,33 @@ waterElement.addEventListener('click', function() {
 
     // Open modal Premium Themes - If #operations >= 25
     buttonPremiumThemes.addEventListener('click', function() {
-        const totalOperations = document.getElementById('total-operations').innerHTML;
-        if (totalOperations >= 25) {
+        const totalOperations = document.getElementById('total-operations');
+        let totalOperationsAmount = parseInt(totalOperations.innerHTML);
+        if (totalOperationsAmount >= 25) {
             modalPremiumThemes.style.opacity = 1;   
             modalPremiumThemes.style.zIndex = 10; 
+        }
+
+        // Removes the lock if amount of operations is enough
+        if (totalOperationsAmount >= 50) {
+            const loveElement = document.getElementById('love-element');
+            const lockLove = document.querySelector('.love-unlock');
+            lockLove.remove();
+            loveElement.style.justifyContent = "center";
+        }
+
+        if (totalOperationsAmount >= 75) {
+            const fadeElement = document.getElementById('fade-element');
+            const lockfade = document.querySelector('.fade-unlock');
+            lockfade.remove();
+            fadeElement.style.justifyContent = "center";
+        }
+
+        if (totalOperationsAmount >= 100) {
+            const auroraElement = document.getElementById('aurora-element');
+            const lockaurora = document.querySelector('.aurora-unlock');
+            lockaurora.remove();
+            auroraElement.style.justifyContent = "center";
         }
     });
 
@@ -749,27 +772,6 @@ function operationsCounter() {
             const lock = document.querySelector('.themes-premium-unlock');
             lock.remove();
         }
-
-        if (totalOperations >= 50) {
-            const loveElement = document.getElementById('love-element');
-            const lockLove = document.querySelector('.love-unlock');
-            lockLove.remove();
-            loveElement.style.justifyContent = "center";
-        }
-
-        if (totalOperations >= 75) {
-            const fadeElement = document.getElementById('fade-element');
-            const lockfade = document.querySelector('.fade-unlock');
-            lockfade.remove();
-            fadeElement.style.justifyContent = "center";
-        }
-
-        if (totalOperations >= 100) {
-            const auroraElement = document.getElementById('aurora-element');
-            const lockaurora = document.querySelector('.aurora-unlock');
-            lockaurora.remove();
-            auroraElement.style.justifyContent = "center";
-        }
     });
 }
 
@@ -871,7 +873,7 @@ function calculator() {
         let actualOperation = displayOperation.value;
         
         let lastChar = actualOperation.charAt(actualOperation.length - 1);
-        if (lastChar != ".") {
+        if (lastChar != "." && lastChar != "-") {
             let operation = `${displayOperation.value}-`;
             displayOperation.value = operation;
         }   
