@@ -655,6 +655,54 @@ a {
     background-image: linear-gradient(to bottom right, #ec9613, #e719a3);
 }
 
+.fade .stats {
+    background-color: #00000063;
+}
+
+.fade .themes svg {
+    fill: #111111;
+}
+
+.fade .themes button {
+    background-color: #00000080;
+}
+
+.fade .themes button:hover {
+    background-color: #000000c0;
+}
+
+.fade .themes p {
+    color: #000000;
+}
+
+.fade .footer h3 {
+    color: #000;
+}
+
+.fade .calculator {
+    background-color: #00000054;
+}
+
+.fade .calculator .display {
+    background-color: #00000048;
+}
+
+.fade .stm-container {
+    background-color: #000000d5;
+}
+
+.fade .stm-container h1 {
+    color: #ffffffef;
+}
+
+.fade .stm-container h2 {
+    color: #fff;
+}
+
+.fade .element:hover {
+    background-color: #ffffff09;
+}
+
 /* --- LOVE --- */
 .love {
     background-image: linear-gradient(#f30bad, #ce1c25ee); 
