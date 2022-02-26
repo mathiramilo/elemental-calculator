@@ -321,6 +321,40 @@ a {
     color: #fff;
 }
 
+.stats-btn {
+    display: none;
+    position: absolute;
+    gap: 20px;
+    top: 45px;
+    left: 45px;
+}
+
+.stats-btn svg {
+    width: 28px;
+    fill: #fff;
+}
+
+@media (max-width: 1096px) {
+    .stats-btn {
+        display: flex;
+    }
+
+    .stats {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 896px) {
+    .stats-btn {
+        cursor: pointer;
+    }
+
+    .btn-view-stats {
+        display: none;
+    }
+}
+
 /* ------ THEMES ------ */
 .themes {
     position: absolute;
@@ -388,6 +422,32 @@ a {
 .themes-btn:hover {
     background-color: #ffffff8e;
     cursor: pointer;
+}
+
+.btn-themes-sm {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-themes-sm svg {
+    width: 28px;
+    fill: #fff;
+}
+
+@media (max-width: 896px) {
+    .themes {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .btn-themes-sm {
+        display: block;
+    }
 }
 
 /* ------ MODAL STANDARD THEMES ------ */
