@@ -11,7 +11,7 @@ HTML, CSS & JavaScript Calculator where you can choose between 4 elemental color
 ### Framework
 * No Framework
 ### Libraries
-* No Libraries
+* Particles JS
 ### Others
 *
 ## Contact
