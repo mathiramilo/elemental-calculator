@@ -16,3 +16,4 @@ HTML, CSS & JavaScript Calculator where you can choose between 4 elemental color
 *
 ## Contact
 * GitHub: https://github.com/mathiramilo
+* Linkedin: https://www.linkedin.com/in/mathias-ramilo/
